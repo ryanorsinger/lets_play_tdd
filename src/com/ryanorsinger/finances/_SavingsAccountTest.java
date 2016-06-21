@@ -1,3 +1,4 @@
+package com.ryanorsinger.finances;
 import static org.junit.Assert.*;
 
 import org.junit.Test;

@@ -1,3 +1,4 @@
+package com.ryanorsinger.finances;
 
 public class SavingsAccount {
 	
