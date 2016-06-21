@@ -21,5 +21,13 @@ public class _SavingsAccountTest
 		account.withdraw(75);
 		assertEquals(-75, account.balance());
 	}
+	
+	@Test
+	public void nextYear() {
+		SavingsAccount account = new SavingsAccount();
+		account.deposit(10000);
+		SavingsAccount nextYear = account.nextYear(10);
+		assertEquals("$10,000 after a year with 10% interest", 11000, nextYear.balance());
+	}
 }
   
