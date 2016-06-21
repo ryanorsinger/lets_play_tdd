@@ -1,8 +1,14 @@
 package com.ryanorsinger.finances;
 
-public class SavingsAccount {
+public class SavingsAccountYear {
 	
 	private int balance = 0;
+	
+	public SavingsAccountYear() {}
+	
+	public SavingsAccountYear(int startingBalance, int interestRate) {
+	
+	}
 	
 	public void deposit(int amount) {
 		balance += amount;
@@ -16,8 +22,8 @@ public class SavingsAccount {
 		balance -= amount;
 	}
 	
-	public SavingsAccount nextYear(int interestRate) {
-		SavingsAccount result = new SavingsAccount();
+	public SavingsAccountYear nextYear(int interestRate) {
+		SavingsAccountYear result = new SavingsAccountYear();
 		result.deposit(balance() + (balance() * interestRate / 100));
 		return result;
 	}
