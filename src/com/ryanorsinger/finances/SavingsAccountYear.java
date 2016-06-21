@@ -5,8 +5,6 @@ public class SavingsAccountYear {
 	private int startingBalance = 0;
 	private int interestRate = 0;
 	
-	public SavingsAccountYear() {}
-	
 	public SavingsAccountYear(int startingBalance, int interestRate) {
 		this.startingBalance = startingBalance;
 		this.interestRate = interestRate;
