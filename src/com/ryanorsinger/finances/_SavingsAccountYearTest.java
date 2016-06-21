@@ -32,7 +32,7 @@ public class _SavingsAccountYearTest
 	
 	@Test
 	public void endingBalance() {
-		SavingsAccountYear account = new SavingsAccountYear(1000, 10);
+		SavingsAccountYear account = new SavingsAccountYear(10000, 10);
 		assertEquals(11000, account.endingBalance());
 	}
 }
